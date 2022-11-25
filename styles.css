@@ -1,0 +1,386 @@
+:root {
+    --main-accent-color: rgb(205, 205, 205);
+}
+
+.navbar {
+    position: fixed;
+    display: none;
+    width: 100%;
+}
+
+#landing {
+    font-family: Consolas;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 10vh;
+    border-top: 20px solid lightgray;
+    border-bottom: 20px solid lightgray;
+    border-left: 20px solid rgb(187, 186, 186);
+    border-right: 20px solid rgb(187, 186, 186);
+}
+
+#landing #hi {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline;
+    position: absolute;
+    left: 25%;
+    bottom: 60%;
+    font-size: 4vh;
+    padding: 10px 40px;
+    background-color: rgb(187, 186, 186);
+}
+
+@keyframes name-hover {
+    from {
+        padding: 9vh 5vw;
+    }
+    to {
+        padding: 10vh 6vw;
+    }
+}
+@keyframes name-unhover {
+    from {
+        padding: 10vh 6vw;
+    }
+    to {
+        padding: 9vh 5vw;
+    }
+}
+
+
+#landing #name {
+    position:static;
+    display: inline;
+    background-color: var(--main-accent-color);
+    padding: 9vh 5vw;
+}
+
+#landing #name:hover {
+    animation-name: name-hover;
+    animation-duration: 0.5s;
+    padding: 10vh 6vw;
+}
+
+#landing #name:not(:hover) {
+    animation-name: name-unhover;
+    animation-duration: 0.5s;
+    padding: 9vh 5vw;
+}
+
+@keyframes letter-hover {
+    from {
+        font-size: 10vh;
+    }
+    to {
+        font-size: 11vh;
+    }    
+}
+
+@keyframes letter-unhover {
+    from {
+        font-size: 11vh;
+    }
+    to {
+        font-size: 10vh;
+    }    
+}
+
+.letter {
+    
+    font-size: 10vh;
+}
+
+.letter:hover {
+    animation-name: letter-hover;
+    animation-duration: 0.5s;
+    font-size: 11vh;
+    cursor: default;
+}
+
+.letter:not(:hover) {
+    animation-name: letter-unhover;
+    animation-duration: 0.5s;
+    font-size: 10vh;
+}
+
+#landing #brief {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline;
+    position: absolute;
+    left: 31%;
+    bottom: 30%;
+    font-size: 4vh;
+    padding: 10px 40px;
+    background-color: rgb(187, 186, 186);
+}
+
+#about-me-section {
+    padding: 40px;
+    background-color: var(--main-accent-color);
+    border-top: 20px solid rgb(231, 231, 231);
+    border-bottom: 20px solid rgb(231, 231, 231);
+    border-left: 20px solid rgb(187, 186, 186);
+    border-right: 20px solid rgb(187, 186, 186);
+}
+
+#about-me {
+    flex: 1;
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#about-me h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: white;
+    border-top: 7px solid rgb(231, 231, 231);
+    border-bottom: 7px solid rgb(231, 231, 231);
+    border-left: 7px solid rgb(187, 186, 186);
+    border-right: 7px solid rgb(187, 186, 186);
+    font-size: 4vh;
+}
+
+#about-me #text {
+    display: flex;
+}
+
+#about-me #text p {
+    font-family: Consolas;
+    text-align: left;
+    padding: 50px 0 0 50px;
+    flex: 8;
+}
+
+.filler {
+    flex: 1;
+}
+
+#about-me #text #links {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#about-me #text #links a{
+    margin: 15px;
+    
+}
+
+#about-me #text #links a img{
+    min-height: 100px;
+    padding: 10px;
+    background-color: white;
+    border-top: 7px solid rgb(231, 231, 231);
+    border-bottom: 7px solid rgb(231, 231, 231);
+    border-left: 7px solid rgb(187, 186, 186);
+    border-right: 7px solid rgb(187, 186, 186);
+}
+
+#about-me #text #links a img:hover{
+    background-color: rgb(217, 217, 217);
+    border-top: 7px solid rgb(136, 136, 136);
+    border-bottom: 7px solid rgb(136, 136, 136);
+    border-left: 7px solid rgb(78, 78, 78);
+    border-right: 7px solid rgb(78, 78, 78);
+}
+
+#projects-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects-title h1 {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+    background-color: lightgray;
+    font-size: 4vh;
+    border-top: 7px solid rgb(231, 231, 231);
+    border-bottom: 7px solid rgb(231, 231, 231);
+    border-left: 7px solid rgb(187, 186, 186);
+    border-right: 7px solid rgb(187, 186, 186);
+}
+
+#projects {
+    width: 100%;
+    /* height: 100vh; */
+    border-top: 20px solid lightgray;
+    border-bottom: 20px solid lightgray;
+    border-left: 20px solid rgb(187, 186, 186);
+    border-right: 20px solid rgb(187, 186, 186);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1;
+
+    max-width: 70vw;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: var(--main-accent-color);
+    border-top: 15px solid rgb(231, 231, 231);
+    border-bottom: 15px solid rgb(231, 231, 231);
+    border-left: 15px solid rgb(187, 186, 186);
+    border-right: 15px solid rgb(187, 186, 186);
+}
+
+@keyframes project-hover {
+    from {
+        border-top: 15px solid rgb(231, 231, 231);
+        border-bottom: 15px solid rgb(231, 231, 231);
+        border-left: 15px solid rgb(187, 186, 186);
+        border-right: 15px solid rgb(187, 186, 186);
+    }
+    to {
+        border-top: 10px solid rgb(231, 231, 231);
+        border-bottom: 10px solid rgb(231, 231, 231);
+        border-left: 10px solid rgb(187, 186, 186);
+        border-right: 10px solid rgb(187, 186, 186);
+    }
+}
+
+@keyframes project-unhover {
+    from {
+        border-top: 10px solid rgb(231, 231, 231);
+        border-bottom: 10px solid rgb(231, 231, 231);
+        border-left: 10px solid rgb(187, 186, 186);
+        border-right: 10px solid rgb(187, 186, 186);
+    }
+    to {
+        border-top: 15px solid rgb(231, 231, 231);
+        border-bottom: 15px solid rgb(231, 231, 231);
+        border-left: 15px solid rgb(187, 186, 186);
+        border-right: 15px solid rgb(187, 186, 186);
+    }
+}
+
+.project:hover {
+    animation-name: project-hover;
+    animation-duration: 0.5s;
+    border-top: 10px solid rgb(231, 231, 231);
+    border-bottom: 10px solid rgb(231, 231, 231);
+    border-left: 10px solid rgb(187, 186, 186);
+    border-right: 10px solid rgb(187, 186, 186);
+}
+
+.project:not(:hover) {
+    animation-name: project-unhover;
+    animation-duration: 0.5s;
+    border-top: 15px solid rgb(231, 231, 231);
+    border-bottom: 15px solid rgb(231, 231, 231);
+    border-left: 15px solid rgb(187, 186, 186);
+    border-right: 15px solid rgb(187, 186, 186);
+}
+
+.project .image {
+    flex: 2;
+}
+
+.project .image img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 8px solid rgb(255, 255, 255);
+}
+
+.project .text {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.project .text h1 {
+    flex: 1;
+    margin-left: 30px;
+    padding-left: 20px;
+    margin-top: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 2px white;
+    font-weight: 700;
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
+
+.project .text p {
+    flex: 3;
+    padding: 30px;
+    font-family: Consolas;
+}
+
+@media only screen and (max-width: 1500px) {
+    #landing #hi {
+        font-size: 2vh;
+        bottom: 52.5%;     
+    }
+    
+    #landing #name {
+        font-size: 5vh;
+        padding: 5vh 5vw;
+    }
+    
+    #landing #brief {
+        font-size: 2vh;
+        left: 30%;
+        bottom: 36.5%; 
+    }
+  }
+
+@media only screen and (min-width: 1700px) and (max-width: 1920px) {
+    #landing #hi {
+        left: 24%;
+    }
+    
+    #landing #name {
+
+    }
+    
+    #landing #brief {
+        left: 30%;
+    }
+  }
+
+@media only screen and (min-width: 2200px) {
+    #landing #hi {
+        left: 26%;
+    }
+    
+    #landing #name {
+
+    }
+    
+    #landing #brief {
+        left: 33%;
+    }
+
+    .project .text {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        font-size: larger;
+    }
+
+    #about-me {
+        font-size: larger;
+    }
+
+    #about-me {
+        max-width: 60vw;
+    }
+  }

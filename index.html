@@ -4,11 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pages</title>
+    <title>Alexei's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <p>
-        Hello world!
-    </p>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar w/ text</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Navbar text with an inline element
+            </span>
+          </div>
+        </div>
+      </nav>
+
+    <section id="landing">
+        <p id="hi">Hi, I am...</p>
+        <div id="name"><span class="letter">A</span><span class="letter">l</span><span class="letter">e</span><span class="letter">x</span><span class="letter">e</span><span class="letter">i</span> <span class="letter">D</span><span class="letter">a</span><span class="letter">n</span><span class="letter">e</span><span class="letter">l</span><span class="letter">y</span><span class="letter">u</span><span class="letter">k</span></div>
+        <p id="brief">... student, programmer, maker.</p>
+    </section>
+
+    <section id="about-me-section">
+        <div id="about-me">
+            <h1>Who am I?</h1>
+            <div id="text">
+                <p>
+                    I am currently a student at John Abbott College in the third year of the Computer Science program. During my years of eduction, I have garnered a substantial amount of professional skills, such as problem solving, working in a team, and accurately planning out work in advance.<br/><br/>
+                    I work and have worked with a multitude of different programming languages and technologies. For instance, I have done a lot of database design, creation, and management, a lot of programming (in Java, C#, and many more), and a lot of web development. My specific set of interests and skills points me most towards web development, which I shall receive formal training in shortly. I am never afraid of learning something new, which bodes well for me as the field of web development is ever-changing.
+                </p>
+                <div class="filler"></div>
+                <div id="links">
+                    <div class="filler"></div>
+                    <a href="https://www.linkedin.com/in/alexei-danelyuk" target="_blank">
+                        <!-- svg taken from: https://iconmonstr.com/linkedin-1-svg/ -->
+                        <img src="./images/linkedin.svg">
+                    </a>
+                    <div class="filler"></div>
+                    <a href="https://github.com/AlexeiDanelyuk" target="_blank">
+                        <!-- svg taken from: https://iconmonstr.com/github-1-svg/ -->
+                        <img src="./images/github.svg">
+                    </a>
+                    <div class="filler"></div>
+                </div>
+                <div class="filler"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div id="projects-title">
+            <h1>Projects</h1>
+        </div>
+        </div>
+        <div>
+            <div class="project">
+                <div class="image">
+                    <img src="./images/wordle.png">
+                </div>
+                <div class="text">
+                    <h1>Wordle Solver</h1>
+                    <p>Most people probably know the famous New York Times game titled "Wordle". Every day, it gives the user 6 tries to guess the word by putting in guesses and seeing which letters were wrong, which partly right, or which in the correct spot. Well, no longer do people need to think of the words themselves since the script I have written in python does everything for them, down to the opening of the window and of the typing the guesses. It uses a very primitive way of searching, I will admit, but it works!<br/><br/><a href="https://github.com/AlexeiDanelyuk/wordle-solver">Link to the repo!</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image">
+                <img src="./images/wonderful-events.png">
+            </div>
+            <div class="text">
+                <h1>Wonderful Events</h1>
+                <p>This project is one completed in a team of 3 people, which is just as well because it was a big one: designing and creating a website with several data types that each have a CRUD functionality while also making the website look user-friendly. My team and I take great pride with how it turned out, both visually and functionally. With its vibrant and joyful colors, it stands out in the sea of dark mode-styled websites that comprise the overwhelming majority of modern website designs. Not only that, the website has a lot of function and manages to do all of that without bugs. It is not perfect, but it was made with love. <br/><br/><a href="https://github.com/AlexeiDanelyuk/wonderful-events-website">Link to the repo!</a></p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image">
+                <img src="./images/trip-tracker.png">
+            </div>
+            <div class="text">
+                <h1>Trip Tracker</h1>
+                <p>If you or someone you know works for Uber, then this app might be worth considering. Its functionality boils down to adding and keeping track of all the trip you make in your car, and marking the trips as being personal travel or for Uber. This project seems easy, but there are a lot of moving parts that one has to considering when coding something like it. All in all though, it was worth the effort because the app does indeed look pretty good.<br/><br/><a href="https://github.com/AlexeiDanelyuk/trip-tracker">Link to the repo!</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
