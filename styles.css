@@ -342,9 +342,9 @@
     }
   }
 
-@media only screen and (min-width: 1700px) and (max-width: 1920px) {
+@media only screen and (min-width: 1700px) and (max-width: 2100) {
     #landing #hi {
-        left: 24%;
+        left: 26%;
     }
     
     #landing #name {
@@ -356,7 +356,7 @@
     }
   }
 
-@media only screen and (min-width: 2200px) {
+@media only screen and (min-width: 2100px) {
     #landing #hi {
         left: 26%;
     }
