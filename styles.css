@@ -9,7 +9,7 @@
 }
 
 #landing {
-    font-family: Consolas;
+    font-family: monospace;
     width: 100vw;
     height: 100vh;
     text-align: center;
@@ -154,7 +154,7 @@
 }
 
 #about-me #text p {
-    font-family: Consolas;
+    font-family: monospace;
     text-align: left;
     padding: 50px 0 0 50px;
     flex: 8;
@@ -273,23 +273,23 @@
     }
 }
 
-.project:hover {
+/* .project:hover {
     animation-name: project-hover;
     animation-duration: 0.5s;
     border-top: 10px solid rgb(231, 231, 231);
     border-bottom: 10px solid rgb(231, 231, 231);
     border-left: 10px solid rgb(187, 186, 186);
     border-right: 10px solid rgb(187, 186, 186);
-}
+} */
 
-.project:not(:hover) {
+/* .project:not(:hover) {
     animation-name: project-unhover;
     animation-duration: 0.5s;
     border-top: 15px solid rgb(231, 231, 231);
     border-bottom: 15px solid rgb(231, 231, 231);
     border-left: 15px solid rgb(187, 186, 186);
     border-right: 15px solid rgb(187, 186, 186);
-}
+} */
 
 .project .image {
     flex: 2;
@@ -321,7 +321,7 @@
 .project .text p {
     flex: 3;
     padding: 30px;
-    font-family: Consolas;
+    font-family: monospace;
 }
 
 @media only screen and (max-width: 1500px) {
